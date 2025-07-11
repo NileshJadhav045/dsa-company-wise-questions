@@ -1,4 +1,10 @@
 public class MoveZeros {
+    /* Leetcode -> 283. Move Zeroes
+     * Given an integer array nums, move all 0's to the end of it while maintaining
+     * the relative order of the non-zero elements.
+
+        Note that you must do this in-place without making a copy of the array.
+     */
     public static void moveZeroes(int arr[]) {
         int z = -1;
         int n = arr.length;
