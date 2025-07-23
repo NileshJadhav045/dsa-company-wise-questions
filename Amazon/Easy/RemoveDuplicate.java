@@ -22,18 +22,20 @@ public class RemoveDuplicate {
     public static int removeDuplicate(int arr[]) {
         int i = 0;
         for (int j = 1; j < arr.length; j++) {
-            if (arr[i] != arr[j]) {
-                arr[i + 1] = arr[j];
+            if (arr[i] != arr[j]) { // check if arr[i]!=arr[j]
+                arr[i + 1] = arr[j]; // if they are not equal then swap them i+1 to j
                 i++;
             }
         }
-        return (i + 1);
+        return (i + 1); // return new size of an array i+1 becouse i start with 0
     }
 
     public static void main(String[] args) {
-        int arr1[] = { 1, 1, 2 };
+        // int arr1[] = { 1, 1, 2 };
         int arr2[]={0,0,1,1,1,2,2,3,3,4};
-        System.out.println("After removing dup ele arr size is: "+removeDuplicate(arr1));
-        System.out.println("After removing dup ele arr size is: "+removeDuplicate(arr2));
+        int newSize=removeDuplicate(arr2);
+        for(int i=0; i<newSize; i++){
+            System.out.print(arr2[i]+" ");
+        }
     }
 }
