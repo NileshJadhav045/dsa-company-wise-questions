@@ -1,4 +1,3 @@
-package Atlassian.Medium;
 
 import java.util.Stack;
 /* Leetcode -> 1381. Design a Stack With Increment Operation
@@ -19,6 +18,7 @@ public class DesingStack {
         static int currSize; // Current number of elements in the stack
 
         // Constructor: Initializes the stack with a given maximum size
+        @SuppressWarnings("static-access")
         public CustomStack(int maxSize) {
             currSize = 0;
             this.maxSize = maxSize;
@@ -62,6 +62,7 @@ public class DesingStack {
             }
         }
     }
+    @SuppressWarnings("static-access")
     public static void main(String[] args) {
         CustomStack customStack = new CustomStack(3);
         customStack.push(1);

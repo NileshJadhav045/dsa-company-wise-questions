@@ -1,4 +1,3 @@
-package Atlassian.Medium;
 
 import java.util.HashMap;
 import java.util.HashSet;
