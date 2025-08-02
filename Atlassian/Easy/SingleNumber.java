@@ -1,4 +1,3 @@
-package Atlassian.Easy;
 
 import java.util.*;
 /* Leetcode -> 137. Single Number II
